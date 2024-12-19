@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
 <style>
 body, html {
   height: 100%;
+  font-family: Arial, sans-serif;
   margin: 0;
 }
 
@@ -41,7 +43,38 @@ hr {
   margin: auto;
   width: 40%;
 }
+
+/* Additional styles for the email form */
+.email-form {
+  margin-top: 20px;
+  display: inline-flex;
+  gap: 8px;
+}
+
+.email-form input[type="email"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 220px;
+  color: #000;
+}
+
+.email-form button {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.email-form button:hover {
+  background: #555;
+}
 </style>
+</head>
 <body>
 
 <div class="bgimg">
@@ -49,9 +82,15 @@ hr {
     <p>Financial Berg</p>
   </div>
   <div class="middle">
-    <h1>Financial Berg</h1>
+    <h1>FINANCIAL BERG</h1>
     <hr>
     <p>COMING SOON</p>
+    <!-- Email subscribe form starts here -->
+    <form class="email-form" action="#" method="post">
+      <input type="email" name="email" placeholder="Enter your email address" required>
+      <button type="submit">Notify Me</button>
+    </form>
+    <!-- Email subscribe form ends here -->
   </div>
   <div class="bottomleft">
     <p>Some text</p>
